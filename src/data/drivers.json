@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Michael Schumacher",
+        "titles": "7",
+        "image": "michael_schumacher.jpg"
+    },
+    {
+        "name": "Lewis Hamilton",
+        "titles": "7",
+        "image": "lewis_hamilton.jpg"
+    },
+    {
+        "name": "Juan Manuel Fangio",
+        "titles": "5",
+        "image": "juan_manuel_fangio.jpg"
+    },
+    {
+        "name": "Alain Prost",
+        "titles": "4",
+        "image": "alain_prost.jpg"
+    },
+    {
+        "name": "Sebastian Vettel",
+        "titles": "4",
+        "image": "sebastian_vettel.jpg"
+    },
+    {
+        "name": "Jackie Stewart",
+        "titles": "3",
+        "image": "jackie_stewart.jpg"
+    },
+    {
+        "name": "Niki Lauda",
+        "titles": "3",
+        "image": "niki_lauda.jpg"
+    },
+    {
+        "name": "Ayrton Senna",
+        "titles": "3",
+        "image": "ayrton_senna.jpg"
+    },
+    {
+        "name": "Nelson Piquet",
+        "titles": "3",
+        "image": "nelson_piquet.jpg"
+    },
+    {
+        "name": "Jack Brabham",
+        "titles": "3",
+        "image": "jack_brabham.jpg"
+    }
+]
