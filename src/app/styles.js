@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
         background: teal;
         color: white;
     }
-
 `;
 export default GlobalStyle;
 
