@@ -23,5 +23,3 @@ export const Popup = styled.div`
     position: fixed;
 `;
 
-
-

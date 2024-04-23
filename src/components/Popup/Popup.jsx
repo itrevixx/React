@@ -1,8 +1,8 @@
 
 import { Container, Content, Overlay } from './Popup.styles';
 
-const Popup = ({ visible }) => (
-  <Container visible={visible}>
+const Popup = ({ propVisible }) => (
+  <Container visible={propVisible}>
     <Overlay />
     <Content>Has Ganado🎉</Content>
   </Container>

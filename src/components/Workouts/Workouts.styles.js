@@ -6,9 +6,6 @@ export const Container = styled.div`
     margin: auto;
     font-size: 2rem;
     font-family: myFont;
-    .rotated{
-        transform: rotate(180deg);
-    }
 `;
 
 export const Menu = styled.div`
@@ -46,8 +43,8 @@ width: 700px;
 `;
 
 export const Img = styled.img`
-    border-radius: 25px;
-    ${({ active }) => active ? 'border: 4px solid red' : 'border:4px solid transparent'}
+    border-radius: 20px;
+    border: ${({ active }) => active ? '4px solid red' : '4px solid transparent'}
 `;
 
 export const ButtonLeft = styled.span`
