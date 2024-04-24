@@ -11,7 +11,6 @@ const Layout = ({ children }) => {
           <li><NavLink to="contact" >Contact</NavLink></li>
           <li><NavLink to="about" >About</NavLink></li>
           <li><NavLink to="pokemon" >Pokemon</NavLink></li>
-          <li><NavLink to="starwars" >StarWars</NavLink></li>
           <li><NavLink to="chucknorris" >ChuckNorris</NavLink></li>
         </ul>
       </nav>

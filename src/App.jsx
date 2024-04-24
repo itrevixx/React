@@ -23,7 +23,7 @@ const App = () => <Router />;
 
 export default App; */
 
-import { useEffect, useState } from "react"
+/* import { useEffect, useState } from "react"
 import { getCharacters } from "./StarWars/services/services";
 
 const App = () => {
@@ -41,4 +41,4 @@ const App = () => {
   </div>;
 }
 
-export default App
+export default App */

@@ -3,7 +3,7 @@ import falacys from './assets/data/falacias';
 
 
 const App = () => {
-    const [falacyType, setFalacyType] = useState({});
+    const [falacy, setFalacy] = useState({});
     const [falacySample, setFalacySample] = useState({});
     const [falacy, setFalacy] = useState({});
     const [questionFalacy, setQuestionsFalacy] = useState({});
@@ -14,17 +14,10 @@ const App = () => {
     }, [])
 
     const chooseRandomFalacy = () => {
-        const i = Math.floor(Math.random() * falacys.length);
-        const selectedFalacy = falacys[i];
-        setFalacyType(selectedFalacy);
-
-        const j = Math.floor(Math.random() * selectedFalacy.samples.length);
-        const selectedFalacySample = selectedFalacy.samples[j];
-        setFalacySample(selectedFalacySample);
+        const pos = Math.floor(Math.random() * falacys.samples.length);
+        const f = falacys[pos]
 
         setFalacy(selectedFalacy);
-
-
     }
 
     return (
