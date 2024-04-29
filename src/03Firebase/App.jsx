@@ -13,6 +13,7 @@ const App = () => {
     const consult = () => {
         getItems().then((res) => {
             setUsers(res)
+            //getItems().then(setUsers) -> version corta
         })
     }
 

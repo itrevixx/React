@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './03FirebaseCopia/App.jsx'
+import App from './01Falacias/App.jsx'
 import GlobalStyle from './app/styles.js'
 
 

@@ -1,31 +1,35 @@
-import { useEffect, useState } from 'react';
-import falacys from './assets/data/falacias';
-
+import { useEffect, useState } from "react"
+import { getRandom } from './app/utils'
+import falacies from './assets/data/falacias.json'
 
 const App = () => {
-    const [falacy, setFalacy] = useState({});
-    const [falacySample, setFalacySample] = useState({});
-    const [falacy, setFalacy] = useState({});
-    const [questionFalacy, setQuestionsFalacy] = useState({});
 
-    useEffect(() => {
-        chooseRandomFalacy()
-
-    }, [])
+    const [falacy, setFalacy] = useState('');
+    const [falacySample, setFalacySample] = useState('');
+    const [questionFalacy, setQuestionFalacy] = useState('');
 
     const chooseRandomFalacy = () => {
-        const pos = Math.floor(Math.random() * falacys.samples.length);
-        const f = falacys[pos]
+        const i = Math.floor(Math.random() * falacies.length)
+        const randomFalacy = falacies[i]
+        setFalacy(randomFalacy)
 
-        setFalacy(selectedFalacy);
+        const fs = randomFalacy.samples[Math.floor(Math.random() * randomFalacy.samples.length)]
+        setFalacySample(fs)
+        const samples = getRandom(falacies, 2)
+        samples.push(randomFalacy);
     }
+
+    useEffect(() => {
+        chooseRandomFalacy();
+    }, [])
 
     return (
         <div>
-            <h2>{falacyType.type}</h2>
-
+            <p>{falacySample}</p>
+            <p><button>X</button>{falacy.type}<button>Mostrar psita</button></p>
         </div>
     )
 }
 
-export default App;
+export default App
+

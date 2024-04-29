@@ -7,10 +7,10 @@ const GlobalStyle = createGlobalStyle`
         font-family: myFont;
         src: url(${font});
     }
-    body{
-        background: teal;
+    /* body{
+        background: #09051A;  //teal -> el color anterior
         color: white;
-    }
+    } */
 `;
 export default GlobalStyle;
 
