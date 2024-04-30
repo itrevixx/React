@@ -65,8 +65,8 @@ import { Container } from "./app/styles";
 const App = () => {
 
     const [books, setBooks] = useState();
-    const [title, setTitle] = useState();
-    const [price, setPrice] = useState();
+    const [title, setTitle] = useState('');
+    const [price, setPrice] = useState('');
 
     const render = () => {
         getBook().then((res) => {

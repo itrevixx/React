@@ -1,13 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "../pages/Home"
+import Tasks from "../pages/Tasks"
+import Layout from "../components/Layout/Layout"
 
-const router = () => {
-    return (
-        <BrowserRouter>
+const router = () => (
+    <BrowserRouter>
+        <Layout>
             <Routes>
-                <Route index element={ }></Route>
+                <Route index element={<Home />}></Route>
+                <Route path="/tasks" element={<Tasks />}></Route>
             </Routes>
-        </BrowserRouter>
-    )
-}
+        </Layout>
+    </BrowserRouter>
+)
 
 export default router

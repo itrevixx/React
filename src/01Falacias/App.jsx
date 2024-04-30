@@ -25,8 +25,8 @@ const App = () => {
 
     return (
         <div>
-            <p>{falacySample}</p>
-            <p><button>X</button>{falacy.type}<button>Mostrar psita</button></p>
+            <p>{falacy.samples}</p>
+            <p><button>X</button>{falacy.type}<button>Mostrar pista</button></p>
         </div>
     )
 }
